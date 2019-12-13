@@ -1,0 +1,67 @@
+
+.contcarru{
+      display: block;
+      width: 34vw;
+      margin: auto;
+      perspective: 115vw;
+      position: relative;
+      margin-top: 60px;
+}
+
+.carrusel{
+  width: 100%;
+  position: absolute;
+  animation: rotar 25s infinite linear;
+  transform-style:  preserve-3d ;
+}
+
+.carrusel:hover{
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.carrusel figure{
+  width: 100%;
+  height: 148px;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 0px 20px 0px black;
+  transition: all 300ms;
+}
+
+.carrusel figure:hover{
+  box-shadow: 0px 0px 0px 0px black;
+  transition: all 300ms;
+}
+
+.carrusel figure:nth-child(1){transform: rotateY(60deg) translateZ(430px);}
+.carrusel figure:nth-child(2){transform: rotateY(120deg) translateZ(430px);}
+.carrusel figure:nth-child(3){transform: rotateY(180deg) translateZ(430px);}
+.carrusel figure:nth-child(4){transform: rotateY(2400deg) translateZ(430px);}
+.carrusel figure:nth-child(5){transform: rotateY(300deg) translateZ(430px);}
+.carrusel figure:nth-child(6){transform: rotateY(360deg) translateZ(430px);}
+/* .carrusel figure:nth-child(7){transform: rotateY(240deg) translateZ(450px);}
+.carrusel figure:nth-child(8){transform: rotateY(280deg) translateZ(450px);}
+.carrusel figure:nth-child(9){transform: rotateY(320deg) translateZ(450px);}
+.carrusel figure:nth-child(10){transform: rotateY(360deg) translateZ(450px);} */
+
+.carrusel img{
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+  transition: all 300ms;
+}
+
+.carrusel img:hover{
+  transform: scale(1.3);
+  transition: all 300ms;
+}
+
+@keyframes rotar {
+  from{
+    transform: rotateY(360deg);
+  }to{
+    transform: rotateY(0deg);
+  }
+}
+/* fin del carrusel */
