@@ -7,22 +7,22 @@
           <h2>Centro de ayuda</h2>
           <br>
           <ul id="menu">
-            <li><input type="checkbox" name="list" id="preguntasf" checked=""> <label for="preguntasf">Preguntas frecuentes</label>
-              <ul class="interior">
-                <li><a href="#r">Preguntas frecuentes</a></li>
-              </ul>
-            </li>
            <li><input type="checkbox"name="list" id="pagos"><label for="pagos">Pagos</label>
               <ul class="interior">
-                <li><a href="#"id="pagos1">Formas de pago</a></li>
-                <li><a href="#"id="pagos2">Pago seguro</a></li>
-                <li><a href="#"id="pagos3">MercadoPago</a></li>
+                <li><a href="#">Formas de pago</a></li>
+                <li><a href="#">Pago seguro</a></li>
+                <li><a href="#">MercadoPago</a></li>
               </ul>
+           </li>
+           <li><input type="checkbox" name="list" id="preguntasf" checked=""> <label for="preguntasf">Preguntas frecuentes</label>
+             <ul class="interior">
+               <li><a href="#r">Preguntas frecuentes</a></li>
+             </ul>
            </li>
            <li><input type="checkbox" name="list" id="facturacion"><label for="facturacion">Facturacion</label>
              <ul class="interior">
-               <li><a href="#r"id="fac1">Formas de facturacion</a></li>
-               <li><a href="#r"id="fac2"></a>Factura B</li>
+               <li><a href="#r">Formas de facturacion</a></li>
+               <li><a href="#r"></a>Factura B</li>
              </ul>
            </li>
            <li><input type="checkbox" name="list" id="tucuenta"><label for="tucuenta">Tu cuenta</label>
@@ -50,9 +50,9 @@
            </li>
            <li><input type="checkbox" name="list" id="devoluciones"><label for="devoluciones">Devoluciones</label>
              <ul class="interior">
-               <li><a href="#r" id="dev1">Cancelar un pedido</a></li>
-               <li><a href="#r"id="dev2">Garantias</a></li>
-               <li><a href="#r"id="dev3">Devoluciones</a></li>
+               <li><a href="#r">Cancelar un pedido</a></li>
+               <li><a href="#r">Garantias</a></li>
+               <li><a href="#r">Devoluciones</a></li>
              </ul>
            </li>
            <li><a href="#r">Contactanos</a></li>
@@ -60,13 +60,13 @@
      </div>
    </article>
    {{-- preguntas frecuentes --}}
-    <article class="contenedor2" >
+    <article class="contenedor2">
       <div class="preg">
     <h2 id="subt">Preguntas frecuentes</h2>
     <br>
     <br>
-    <div id="cambio">
-    <ul>
+    
+    <ul >
     <li>¿Cómo busco mi producto?</li>
     <br>
     <p>Dentro del sitio contamos con un buscador de productos localizado a en la parte superior de nuestra página, al introducir el artículo te daremos sugerencias para ayudarte a encontrar el artículo que estas buscando o artículos similares</p>
@@ -133,9 +133,5 @@
     <br>
     </ul>
     </div>
-    </div>
     </article>
   </section>
-  <script  src="/js/preguntasFrecuentes.js" type="application/javascript"></script>
-
-@endsection

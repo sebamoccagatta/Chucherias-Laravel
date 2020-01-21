@@ -19,7 +19,7 @@
     {{-- precio y boton de agregar al carro --}}
     <div class="detprod">
       <p class="precio det">$ {{$producto->precio}}</p>
-      <p><a href="#" class="botoncarro det navbarSupportedContent"><i class="fas fa-cart-plus" ></i>Agregar al carro</a> </p>
+      <p><a href="cart/add/{{$producto->id}}" class="botoncarro det navbarSupportedContent"><i class="fas fa-cart-plus" ></i>Agregar al carro</a> </p>
     </div>
     </div>
   </article>

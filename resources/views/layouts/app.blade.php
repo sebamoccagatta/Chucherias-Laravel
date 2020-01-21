@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="/css/carrusel.css">
     <link rel="stylesheet" href="/css/estilos.css">
 </head>
-<body>
+<body id="body">
   <header>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg shadow-sm barra">
@@ -40,6 +40,7 @@
                       <a href="#"class="nav-item nav-link">QUIENES SOMOS</a>
                       <a href="#"class="nav-item nav-link">CONTACTO</a>
 
+
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -55,11 +56,12 @@
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('| CREAR CUENTA') }}</a>
                                 </li>
                                 <li class="nav-item nav-link icono">
-                                  <a href="#"><i class="fas fa-cart-plus"></i></a>
+                                  <a href="/cart"><i class="fas fa-cart-plus"></i></a>
                                   <a href="#"><i class="fas fa-bell"></i></a>
                                   <a href="#"><i class="fas fa-heart"></i></a>
 
                                 </li>
+
                             @endif
 
                         @else
@@ -98,6 +100,13 @@
 
                             </li>
                         @endguest
+                        <label for="dark-mode" class="dark-mode-button">
+
+                            <input id="dark-mode" class="swich" type="checkbox"
+                            onclick="document.documentElement.classList.toggle('dark-mode')">
+                            Ver modo oscuro
+
+                        </label>
                     </ul>
                 </div>
             </div>
@@ -156,5 +165,7 @@
   </div>
     </div>
 </footer>
+
+{{-- <script  src="/js/registro.js" type="application/javascript"></script> --}}
 </body>
 </html>

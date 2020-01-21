@@ -39,3 +39,16 @@ Route::get('/administrador/{id}', 'UserController@administrador');
 Route::get('/ayuda', function () {
     return view('ayuda');
 });
+route::get('/gracias','CartController@gracias');
+
+
+
+
+// carrito ---------
+
+// Aquí es donde controlo lo del carrito de compras, agregar productos
+Route::get('cart/add/{id}', "CartController@add")->name('cart.add')->middleware('auth');
+//Carrito de compras elimino productos
+Route::get('cart/remove/{id}', "CartController@remove")->name('cart.remove')->middleware('auth');
+//Muestro los productos del carrito
+Route::get('/cart', 'CartController@show')->name('cart')->middleware('auth');

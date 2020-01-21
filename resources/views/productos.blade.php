@@ -40,7 +40,7 @@
       </div>
 
       <p> <a href="/detalleProducto/{{$producto->id}}"class="botonvermas">Ver Mas</a> </p>
-      <p><a href="#" class="botoncarro"><i class="fas fa-cart-plus" ></i>    Agregar al Carrito</a> </p>
+      <p><a href="cart/add/{{$producto->id}}" class="botoncarro"><i class="fas fa-cart-plus" ></i>    Agregar al Carrito</a> </p>
       @isset($_SESSION)
         @if (Auth::user()->rol==9)
 
